@@ -1,6 +1,7 @@
 import csv
 import geopandas as gpd
 import matplotlib.pyplot as plt
+import datetime
 
 def readDistances(filename):
     # Initialize the dictionary to store distances
@@ -125,6 +126,7 @@ def plotMap(cities, supplier, distances, obj, title, filename):
                 horizontalalignment='center',
                 verticalalignment='center',
                 transform=plt.gca().transAxes)
+    plt.savefig('./Plots/' + 'plot_MILP_' + datetime.datetime.now().strftime("%Y%m%d_%H%M%S") + '.png')
     plt.show()
 
 def plotMapPymoo(cities, supplier, distances, obj, title, filename):
@@ -175,5 +177,6 @@ def plotMapPymoo(cities, supplier, distances, obj, title, filename):
                 horizontalalignment='center',
                 verticalalignment='center',
                 transform=plt.gca().transAxes)
-    plt.savefig('warehouse_placement.png', dpi=300)
+    # Add timestamp
+    plt.savefig('./Plots/' + 'plot_GA_' + datetime.datetime.now().strftime("%Y%m%d_%H%M%S") + '.png')
     plt.show()
