@@ -29,14 +29,9 @@ pip install -r requirements.txt
     ```
 # Plots
 The plots are saved in the `plots` directory.
-| Number of warehouses | MILP Iteration 1
-| --- | --- |
-| 1 | <img src="Plots/rajasthan_v1_w1_MLP.png" alt="drawing" style="width:200px;"/> 
-| 5 | <img src="Plots/rajasthan_v1_w5_MLP.png" alt="drawing" style="width:200px;"/>  
-| 7 | <img src="Plots/rajasthan_v1_w7_MLP.png" alt="drawing" style="width:200px;"/> 
-| 9 | <img src="Plots/rajasthan_v1_w9_MLP.png" alt="drawing" style="width:200px;"/> 
-
-| Number of warehouses | MILP Iteration 2
-| --- | --- |
-| 7 | <img src="Plots/rajasthan_v2_w7_MLP.png" alt="drawing" style="width:200px;"/>
-| 9 | <img src="Plots/rajasthan_v2_w9_MLP.png" alt="drawing" style="width:200px;"/>
+| Number of warehouses | MILP Iteration 1 | MILP Iteration 2
+| --- | --- | --- |
+| 1 | <img src="Plots/rajasthan_v1_w1_MLP.png" alt="drawing" style="width:200px;"/> | Infeasible
+| 5 | <img src="Plots/rajasthan_v1_w5_MLP.png" alt="drawing" style="width:200px;"/> | Infeasible 
+| 7 | <img src="Plots/rajasthan_v1_w7_MLP.png" alt="drawing" style="width:200px;"/> | <img src="Plots/rajasthan_v2_w7_MLP.png" alt="drawing" style="width:200px;"/>
+| 9 | <img src="Plots/rajasthan_v1_w9_MLP.png" alt="drawing" style="width:200px;"/> | <img src="Plots/rajasthan_v2_w9_MLP.png" alt="drawing" style="width:200px;"/>
