@@ -67,12 +67,19 @@ pip install -r requirements.txt
     ```
 # Plots
 The plots are saved in the `plots` directory.
-| Number of warehouses | MILP Iteration 1 | MILP Iteration 2 | Genetic Algorithm |
-| --- | --- | --- | --- |
-| 1 | <img src="Plots/MILP/rajasthan_v1_w1_MLP.png" alt="drawing" style="width:200px;"/> | Infeasible | <img src="Plots/GA/rajasthan_v1_w1_GA.png" alt="drawing" style="width:200px;"/>
-| 5 | <img src="Plots/MILP/rajasthan_v1_w5_MLP.png" alt="drawing" style="width:200px;"/> | Infeasible | <img src="Plots/GA/rajasthan_v1_w5_GA.png" alt="drawing" style="width:200px;"/>
-| 7 | <img src="Plots/MILP/rajasthan_v1_w7_MLP.png" alt="drawing" style="width:200px;"/> | <img src="Plots/MILP/rajasthan_v2_w7_MLP.png" alt="drawing" style="width:200px;"/> | <img src="Plots/GA/rajasthan_v2_w7_GA.png" alt="drawing" style="width:200px;"/>
-| 9 | <img src="Plots/MILP/rajasthan_v1_w9_MLP.png" alt="drawing" style="width:200px;"/> | <img src="Plots/MILP/rajasthan_v2_w9_MLP.png" alt="drawing" style="width:200px;"/> | <img src="Plots/GA/rajasthan_v2_w9_GA.png" alt="drawing" style="width:200px;"/>
+## Iteration 1
+| Number of warehouses | MILP Iteration 1 | Genetic Algorithm 1 | 
+| --- | --- | --- |
+| 1 | <img src="Plots/MILP/rajasthan_v1_w1_MLP.png" alt="drawing" style="width:200px;"/> | <img src="Plots/GA/rajasthan_v1_w1_GA.png" alt="drawing" style="width:200px;"/> 
+| 5 | <img src="Plots/MILP/rajasthan_v1_w5_MLP.png" alt="drawing" style="width:200px;"/> | <img src="Plots/GA/rajasthan_v1_w5_GA.png" alt="drawing" style="width:200px;"/> 
+| 7 | <img src="Plots/MILP/rajasthan_v1_w7_MLP.png" alt="drawing" style="width:200px;"/> | <img src="Plots/GA/rajasthan_v2_w7_GA.png" alt="drawing" style="width:200px;"/>
+| 9 | <img src="Plots/MILP/rajasthan_v1_w9_MLP.png" alt="drawing" style="width:200px;"/> | <img src="Plots/GA/rajasthan_v2_w9_GA.png" alt="drawing" style="width:200px;"/>
+## Iteration 2
+| Number of warehouses | MILP Iteration 2 | Genetic Algorithm 2 | 
+| --- | --- | --- |
+| 1, 5 | Infeasible | Infesible |
+| 7 | <img src="Plots/MILP/rajasthan_v2_w7_MLP.png" alt="drawing" style="width:200px;"/> | <img src="Plots/GA/rajasthan_v2_w7_GA.png" alt="drawing" style="width:200px;"/>
+| 9 | <img src="Plots/MILP/rajasthan_v2_w9_MLP.png" alt="drawing" style="width:200px;"/> | <img src="Plots/GA/rajasthan_v2_w9_GA.png" alt="drawing" style="width:200px;"/>
 
 # Shapefiles
 The map data and shapefiles were obtained from the [Hindustan Times Labs](
