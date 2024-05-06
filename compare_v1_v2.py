@@ -25,4 +25,5 @@ plt.legend(['Without Demand and Supply Constraints', 'With Demand and Supply Con
 plt.xlabel('Number of Warehouses')
 plt.ylabel('Max Delivery Distance')
 plt.xticks(range(1, N_MAX+1, 5))
+plt.savefig('./Plots/compare_v1_v2.png')
 plt.show()

@@ -4,3 +4,4 @@ matplotlib
 geopandas
 pandas
 pymoo
+tqdm
