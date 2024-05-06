@@ -81,6 +81,9 @@ The plots are saved in the `plots` directory.
 | 7 | <img src="Plots/MILP/rajasthan_v2_w7_MLP.png" alt="drawing" style="width:200px;"/> | <img src="Plots/GA/rajasthan_v2_w7_GA.png" alt="drawing" style="width:200px;"/>
 | 9 | <img src="Plots/MILP/rajasthan_v2_w9_MLP.png" alt="drawing" style="width:200px;"/> | <img src="Plots/GA/rajasthan_v2_w9_GA.png" alt="drawing" style="width:200px;"/>
 
+The **genetic algorithm** finds **suboptimal** solutions for the second iteration.
+
+
 # Shapefiles
 The map data and shapefiles were obtained from the [Hindustan Times Labs](
     https://github.com/HindustanTimesLabs/shapefiles/blob/master/state_ut/rajasthan/district/rajasthan_district.zip
