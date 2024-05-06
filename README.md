@@ -14,6 +14,8 @@ The problem is formulated to minimize the maximum distance between a warehouse a
 ## Decision Variables
 - $a_{i,j}$ is a binary variable that is 1 if city `i` is supplied by warehouse at city `j` and 0 otherwise.
 
+![image](images/nodes.png)
+
 ## Objective Function
 The objective function is given by:
 
@@ -52,7 +54,7 @@ pip install -r requirements.txt
     python warehouse_1.py -n N 
     # For the second iteration
     python warehouse_2.py -n N
-    # For the third iteration, B is the number of buildings
+    # For the third iteration, B is the budget
     python warehouse_3.py -b B
     # For the fourth iteration
     python warehouse_4.py -b B
