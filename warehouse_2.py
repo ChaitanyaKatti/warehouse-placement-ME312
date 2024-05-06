@@ -71,8 +71,8 @@ if __name__ == '__main__':
 
     # Solve the problem
     solver = LpSolverDefault
-    prob.solve(GUROBI_CMD(msg=0))
-    # prob.solve(PULP_CBC_CMD(msg=0)) # Use this if you don't have Gurobi installed
+    # prob.solve(GUROBI_CMD(msg=0))
+    prob.solve(PULP_CBC_CMD(msg=0)) # Use this if you don't have Gurobi installed
 
     # Check the status of the solution
     if prob.status != 1:

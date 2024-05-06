@@ -42,7 +42,6 @@ if __name__ == '__main__':
     supplier = LpVariable.dicts("Supplier", (cities, cities), cat='Binary')
 
     # Constraint: Max delivery distance of a city from the supplier
-    # prob += max_distance == lpSum(distances[city1][city2] * supplier[city1][city2] for city1 in cities for city2 in cities)
     for city1 in cities:
         for city2 in cities:
             prob += max_distance >= distances[city1][city2] * supplier[city1][city2]
@@ -50,15 +49,6 @@ if __name__ == '__main__':
     # Constraint: Each city is covered by exactly one warehouse
     for city1 in cities:
         prob += lpSum(supplier[city1][city2] for city2 in cities) == 1
-
-    # # Decision varible: If a city is a warehouse
-    # unique_supplier = LpVariable.dict("unique_supplier", (cities), cat='Binary')
-    # for city2 in cities:
-    #     prob += unique_supplier[city2] <= lpSum(supplier[city1][city2] for city1 in cities)
-    #     prob += unique_supplier[city2] >= lpSum(supplier[city1][city2] for city1 in cities) / (len(cities) + 1)
-
-    # # Constraint: Number of warehouses
-    # prob += lpSum(unique_supplier[city] for city in cities) == N
 
     # Constraint: Number of warehouses
     prob += lpSum(supplier[city][city] for city in cities) == N
@@ -70,8 +60,8 @@ if __name__ == '__main__':
 
     # Solve the problem
     solver = LpSolverDefault
-    prob.solve(GUROBI_CMD(msg=0))
-    # prob.solve(PULP_CBC_CMD(msg=0)) # Use this if you don't have Gurobi installed
+    # prob.solve(GUROBI_CMD(msg=0))
+    prob.solve(PULP_CBC_CMD(msg=0)) # Use this if you don't have Gurobi installed
     
     # Check the status of the solution
     if prob.status != 1:

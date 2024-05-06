@@ -67,8 +67,9 @@ if __name__ == '__main__':
 
     ## Solve the LP problem
     solver = LpSolverDefault
-    prob.solve(GUROBI_CMD(msg=0))
-
+    # prob.solve(GUROBI_CMD(msg=0))
+    prob.solver(PULP_CBC_CMD(msg=0))
+    
     # Check the status of the solution
     if prob.status != 1:
         print("Infeasible")
@@ -84,9 +85,6 @@ if __name__ == '__main__':
                 print(f"{city}: {supplierCapacity[city].value()}", supplier[city][city].value())
         
         obj = total_fixed_cost.value() + total_operating_cost.value()
-
-
-
 
 
 
