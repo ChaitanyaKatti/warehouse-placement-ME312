@@ -1,0 +1,6 @@
+numpy
+pulp
+matplotlib
+geopandas
+pandas
+pymoo
